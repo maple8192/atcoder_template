@@ -10,12 +10,13 @@ use easy_ext::ext;
 use itertools::Itertools;
 use itertools_num::ItertoolsNum;
 use num_integer::{gcd, gcd_lcm};
+use num_rational::Ratio;
+use num_traits::{FromPrimitive, ToPrimitive};
 use omniswap::swap;
 use proconio::{fastout, input};
 use proconio::marker::{Bytes, Usize1};
 use rustc_hash::{FxHashMap, FxHashSet};
 use superslice::Ext;
-
 
 fn main() {
     input! {
