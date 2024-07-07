@@ -32,7 +32,7 @@ mod my_library {
     pub const DIR8: [(isize, isize); 8] = [(0, 1), (1, 1), (1, 0), (1, -1), (0, -1), (-1, -1), (-1, 0), (-1, 1)];
 
     #[ext]
-    impl usize {
+    pub impl usize {
         fn is_prime(&self) -> bool {
             if *self == 0 || *self == 1 { return false }
             (2..).take_while(|&x| x * x <= *self).all(|x| *self % x != 0)
@@ -67,7 +67,7 @@ mod my_library {
     }
 
     #[ext]
-    impl bool {
+    pub impl bool {
         fn yes_no(&self) -> &str {
             if *self { "Yes" } else { "No" }
         }
