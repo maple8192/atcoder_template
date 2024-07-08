@@ -1,7 +1,6 @@
 #![allow(dead_code, unused_imports, unused_macros)]
 use my_library::*;
 
-#[fastout]
 fn main() {
     input! {
 
@@ -17,7 +16,7 @@ mod my_library {
     pub use num_rational::Ratio;
     pub use num_traits::{FromPrimitive, ToPrimitive};
     pub use omniswap::swap;
-    pub use proconio::{input, fastout, marker::{Bytes, Usize1}};
+    pub use proconio::{input, marker::{Bytes, Usize1}};
     pub use rustc_hash::{FxHashMap as HashMap, FxHashSet as HashSet};
     pub use superslice::Ext;
 
