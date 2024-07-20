@@ -9,6 +9,7 @@ fn main() {
 
 mod my_library {
     pub use std::iter::once;
+    pub use std::cmp::Reverse;
     pub use std::collections::{BinaryHeap, BTreeMap, BTreeSet, VecDeque};
     pub use ac_library::*;
     pub use bstr::ByteSlice;
